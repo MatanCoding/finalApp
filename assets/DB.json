@@ -1,0 +1,20 @@
+[
+  {
+    "day": 29,
+    "month": 3,
+    "year": 2024,
+    "from": 19,
+    "until": 21,
+    "title": "GYM",
+    "accepted": false
+  },
+  {
+    "day": 30,
+    "month": 3,
+    "year": 2024,
+    "from": 16,
+    "until": 18,
+    "title": "SCHOOL",
+    "accepted": false
+  }
+]

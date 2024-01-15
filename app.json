@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "finalApp",
-    "slug": "finalApp",
+    "slug": "jenjnd",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "matanboemApp.com"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "92eae25d-06b8-4051-8c59-7a42c7646e02"
+      }
+    },
+    "owner": "matanfridmanrahim"
   }
 }

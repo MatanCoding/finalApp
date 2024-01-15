@@ -9,10 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "7.2.0",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
-    "react-native": "0.72.6"
+    "react-native": "0.72.6",
+    "react-native-date-picker": "^4.3.5",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-dropdown-select-list": "^2.0.5",
+    "react-native-fs": "^2.20.0",
+    "expo-file-system": "~15.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
