@@ -1,7 +1,7 @@
 import { View, Image, Text, StyleSheet, ScrollView, TouchableNativeFeedback, TouchableOpacity, Modal, TextInput, Button} from 'react-native';
 import React, { useState } from 'react';
 import { SelectList } from 'react-native-dropdown-select-list'
-import RNDateTimePicker from '@react-native-community/datetimepicker';
+import RNDateTimePicker, { DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import * as fs from 'expo-file-system';
 import colors from '../config/colors';
 
@@ -140,9 +140,10 @@ if(currentDate.day === 0 ){
     updateBookings({day:today.getDate(), year: today.getFullYear(), month:today.getMonth()+1})
     showFirstDay = false
   }
-  const onchange = ({type}, newDate: Date) => {
+  // event: DateTimePickerEvent, date?: Date
+  const onchange = ({type}:DateTimePickerEvent, date: Date|undefined) => {
     if(type === "set"){
-      const currentDate = newDate;
+      const currentDate = date;
       setSelectedDate(currentDate);
       showDatePopup(false)
     }
@@ -479,7 +480,7 @@ function showAdmin(day:number, month:number, year:number){
     );
   }
 
-export default function WelcomeScreen({props, logOut}):any {
+export default function WelcomeScreen({props}:any):any {
   const userDetails = props.userDetails
   const date = new Date();
   requests.push("hello")

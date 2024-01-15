@@ -13,7 +13,7 @@ export default function App() {
     }
     else{
       console.log("login")
-      changeCurrentScreen(<WelcomeScreen props={{ userDetails: user }} logOut={handleLogout} />);
+      changeCurrentScreen(<WelcomeScreen props={{ userDetails: user }} />);
     };
     }
     const handleLogout = () => {
